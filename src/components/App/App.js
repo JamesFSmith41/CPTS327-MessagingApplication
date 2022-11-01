@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import Dashboard from '../Dashboard/Dashboard';
 import Preferences from '../Preferences/Preferences';
 import Login from '../Login/Login';
 import useToken from './useToken';
+import {Box,Typography, TextField,Button} from "@mui/material";
+import NavigationBar from '../NavigationBar/NavigationBar';
+import Grid from '@mui/material/Grid';
 
 function App() {
-
-  // const { token, setToken } = useToken();
-  
-  // if(!token) {
-  //   return <Login setToken={setToken} />
-  // }
-
   return (
     <div className="wrapper">
-      <h1>Secure Messaging App</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/preferences" element={<Preferences />}/>
@@ -27,5 +22,6 @@ function App() {
     </div>
   );
 }
+document.body.style.backgroundColor = "#004d99";
 
 export default App;

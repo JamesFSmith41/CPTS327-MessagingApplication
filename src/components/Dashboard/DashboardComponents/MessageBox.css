@@ -1,0 +1,17 @@
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.uiElements {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
