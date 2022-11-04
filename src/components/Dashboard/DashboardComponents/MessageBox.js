@@ -8,59 +8,7 @@ import {useState, useRef, useEffect} from 'react';
 
 var arr = [];
 var userName1 = "Test";
-let ciphertext;
-
-/*
-Fetch the contents of the "message" textbox, and encode it
-in a form we can use for the encrypt operation.
-*/
-function getMessageEncoding(message) {
- // const messageBox = document.querySelector("#rsa-oaep-message");
- // let message = messageBox.value;
-  let enc = new TextEncoder();
-  return enc.encode(message);
-}
-
-/*
-Get the encoded message, encrypt it and display a representation
-of the ciphertext in the "Ciphertext" element.
-*/
-async function encryptMessage(key) {
-  let encoded = getMessageEncoding();
-  ciphertext = await window.crypto.subtle.encrypt(
-    {
-      name: "RSA-OAEP"
-    },
-    key,
-    encoded
-  );
-
-  let buffer = new Uint8Array(ciphertext, 0, 5);
-  const ciphertextValue = document.querySelector(".rsa-oaep .ciphertext-value");
-  ciphertextValue.classList.add('fade-in');
-  ciphertextValue.addEventListener('animationend', () => {
-    ciphertextValue.classList.remove('fade-in');
-  });
-  ciphertextValue.textContent = `${buffer}...[${ciphertext.byteLength} bytes total]`;
-}
-
-window.crypto.subtle.generateKey(
-  {
-  name: "RSA-OAEP",
-  // Consider using a 4096-bit key for systems that require long-term security
-  modulusLength: 2048,
-  publicExponent: new Uint8Array([1, 0, 1]),
-  hash: "SHA-256",
-  },
-  true,
-  ["encrypt", "decrypt"]
-).then((keyPair) => {
-  const encryptButton = document.querySelector(".rsa-oaep .encrypt-button");
-  encryptButton.addEventListener("click", () => {
-    encryptMessage(keyPair.publicKey);
-  });
-
-  
+ 
 function pushToArr(message) {
   arr.push(
     <Grid item container>
@@ -155,7 +103,10 @@ const MessageBox = () => {
                 sx={{
                     height: 55,
                     width: 150,
-                    spacing: '10px'
+                    spacing: '10px',
+                    borderRadius: 2,
+                    borderColor: 'text.primary',
+                    border: 1,
                 }}
                     type="submit"
                     variant="contained"
@@ -168,6 +119,61 @@ const MessageBox = () => {
         </Grid>
         </div>
     );
-}  
-
+}
 export default MessageBox;
+
+
+
+// let ciphertext;
+
+// /*
+// Fetch the contents of the "message" textbox, and encode it
+// in a form we can use for the encrypt operation.
+// */
+// function getMessageEncoding(message) {
+//  // const messageBox = document.querySelector("#rsa-oaep-message");
+//  // let message = messageBox.value;
+//   let enc = new TextEncoder();
+//   return enc.encode(message);
+// }
+
+// /*
+// Get the encoded message, encrypt it and display a representation
+// of the ciphertext in the "Ciphertext" element.
+// */
+// async function encryptMessage(key) {
+//   let encoded = getMessageEncoding();
+//   ciphertext = await window.crypto.subtle.encrypt(
+//     {
+//       name: "RSA-OAEP"
+//     },
+//     key,
+//     encoded
+//   );
+
+//   let buffer = new Uint8Array(ciphertext, 0, 5);
+//   const ciphertextValue = document.querySelector(".rsa-oaep .ciphertext-value");
+//   ciphertextValue.classList.add('fade-in');
+//   ciphertextValue.addEventListener('animationend', () => {
+//     ciphertextValue.classList.remove('fade-in');
+//   });
+//   ciphertextValue.textContent = `${buffer}...[${ciphertext.byteLength} bytes total]`;
+// }
+
+// window.crypto.subtle.generateKey(
+//   {
+//   name: "RSA-OAEP",
+//   // Consider using a 4096-bit key for systems that require long-term security
+//   modulusLength: 2048,
+//   publicExponent: new Uint8Array([1, 0, 1]),
+//   hash: "SHA-256",
+//   },
+//   true,
+//   ["encrypt", "decrypt"]
+// ).then((keyPair) => {
+//   const encryptButton = document.querySelector(".rsa-oaep .encrypt-button");
+//   encryptButton.addEventListener("click", () => {
+//     encryptMessage(keyPair.publicKey);
+//   });
+
+ 

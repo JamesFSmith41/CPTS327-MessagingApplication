@@ -26,10 +26,13 @@ function LoginButton() {
             height: 40,
             borderRadius: '6px',
             justifyContent: 'center',
+            borderColor: 'text.primary',
+            border: 1,
   
         }}
             onClick={HandleClick}
             variant="contained"
+            style={{backgroundColor: "#2596be"}}
         >
          Login   
         </Button>
@@ -41,20 +44,54 @@ function LoginButton() {
         navigate("/dashboard")
     }
 
- class Login extends React.Component{
+ function Login ()
+ {
 
-    renderLoginButton() {
-        return( 
-            <LoginButton></LoginButton>
-        );
 
-    }
-    render()    {
         return(
             <div className="login-wrapper">
-                <h1>Please Log In</h1>
-                <form>
                 <Box
+                
+                sx={{ 
+                    overflow: 'visibile',
+                    whiteSpace: 'normal',
+                    height: '400px',
+                    overflow: 'auto',
+                    justifyContent: 'center',
+                    borderRadius: 1,
+                    borderColor: 'text.primary',
+                    p: 1,
+
+                }}
+                    style={{backgroundColor: "#e6ecff"}}
+
+                        >
+                <Grid container
+                direction='column'
+                flexDirection="column"
+                >
+
+                    <Grid item>
+                    <Box
+                        sx={{
+                            textAlign: 'center',
+                            textTransform: 'capitalize',
+                            fontWeight: 'bold',
+                            fontSize: 'h6.fontSize',
+                            fontFamily: 'monospace',
+                            width: 250,
+                            height: 40,
+                            borderRadius: '6px',
+                            justifyContent: 'center',
+                        }}
+                        variant="contained"
+                        style={{backgroundColor: "#3fb0d9"}}
+                        >
+                    <p>Please Log In</p>
+                </Box>
+                    </Grid>
+                    <Grid item>
+                    <Box
                 sx={{
                     textAlign: 'center',
                     textTransform: 'capitalize',
@@ -65,65 +102,67 @@ function LoginButton() {
                     height: 40,
                     borderRadius: '6px',
                     justifyContent: 'center',
-                    
-    
                 }}
                  variant="contained"
                  style={{backgroundColor: "#3fb0d9"}}
                 >
                     <p>Username</p>
                 </Box>
-                <TextField 
-                sx={{
-                    textAlign: 'center',
-                    width: 250,
-                    pt: 1,
-    
-                }}
-               // onChange={e => setUserName(e.target.value)}
-                id="outlined-basic"
-                label="Username"
-                >
-                </TextField>
-    
-                <div className='passwordBox'>
-                <Box
-                sx={{
-                    textAlign: 'center',
-                    textTransform: 'capitalize',
-                    fontWeight: 'bold',
-                    fontSize: 'h6.fontSize',
-                    fontFamily: 'monospace',
-                    width: 250,
-                    height: 40,
-                    borderRadius: '6px',
-                    justifyContent: 'center',
-                }}
-                 variant="contained"
-                 style={{backgroundColor: "#3fb0d9"}}
-                >
-                    <p>Password</p>
-                </Box>
-                </div>
-    
+                </Grid>
+                <Grid item>
                 <TextField
-                sx={{
-                    textAlign: 'center',
-                    width: 250,
-                    pt: 1,
-                }}
-                type="password"
-                //onChange={e => setPassword(e.target.value)}            
-                id="outlined-basic"
-                label="Pasword"
-                >
-                </TextField>
-            </form>
-                <div>
-                    {this.renderLoginButton()}
-                </div>
+                            sx={{
+                                textAlign: 'center',
+                                width: 250,
+                                pt: 1,
+                            }}
+                            type="password"
+                            //onChange={e => setPassword(e.target.value)}            
+                            id="outlined-basic"
+                            label="Username"
+                            >
+                            </TextField>
+                    </Grid>
+                        <Grid item>
+                        <Box
+                            sx={{
+                                textAlign: 'center',
+                                textTransform: 'capitalize',
+                                fontWeight: 'bold',
+                                fontSize: 'h6.fontSize',
+                                fontFamily: 'monospace',
+                                width: 250,
+                                height: 40,
+                                borderRadius: '6px',
+                                justifyContent: 'center',
+                            }}
+                            variant="contained"
+                            style={{backgroundColor: "#3fb0d9"}}
+                            >
+                                <p>Password</p>
+                            </Box>  
+                        </Grid>
+                        <Grid item>
+                        <TextField
+                            sx={{
+                                textAlign: 'center',
+                                width: 250,
+                                pt: 1,
+                            }}
+                            type="password"
+                            //onChange={e => setPassword(e.target.value)}            
+                            id="outlined-basic"
+                            label="Pasword"
+                            >
+                            </TextField>
+                        </Grid>    
+                        <Grid item>
+                           <LoginButton>
+                           </LoginButton>
+                        </Grid>
+                </Grid>
+                </Box>
             </div>
         )
-    }
  }   
 export default Login; 

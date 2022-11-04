@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import Dashboard from '../Dashboard/Dashboard';
 import Preferences from '../Preferences/Preferences';
 import Login from '../Login/Login';
-import useToken from './useToken';
 import {Box,Typography, TextField,Button} from "@mui/material";
 import NavigationBar from '../NavigationBar/NavigationBar';
 import Grid from '@mui/material/Grid';
@@ -22,6 +21,6 @@ function App() {
     </div>
   );
 }
-document.body.style.backgroundColor = "#004d99";
+document.body.style.backgroundColor = "#00134d";
 
 export default App;
