@@ -1,0 +1,42 @@
+
+.navbar {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.loggedInOptions
+{
+    
+}
+
+.dashboardButton
+{
+    padding-right: 10px;
+    height: 35;
+    width: 150;
+    border-radius: 2;
+    border-color: #2596be;
+    border: 1;
+    margin-right: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.preferenceButton
+{
+    padding-left: 10px;
+    margin-left: 10px;
+    height: 35;
+    width: 150;
+    border-radius: 2;
+    border-color: #2596be;
+    border: 1;
+    font-family: Arial;
+}
+
+.logout 
+{
+
+}

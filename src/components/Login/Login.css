@@ -1,5 +1,134 @@
-.login-wrapper {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+
+.loginBox   {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
 }
+
+.loginGridContainer {
+    height: 450px;
+    color: #e6ecff;
+    background-color: #3c3a3a;
+    margin-top: 30%;
+    display: felx;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #242526;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 5px #2596be;
+}
+
+.loginText {
+    width: 150%;
+    height: 60px;
+    margin: auto;
+    text-align: center;    
+    margin-top: 5%;
+    border-radius: 5%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.userNameText {
+    width: 250px;
+    height: 40px;
+    margin: auto;
+    text-align: center;    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.userNameTextField {
+    width: 250px;
+    height: 55px;
+    margin: auto;
+    text-align: center;    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.passwordText {
+    width: 250px;
+    height: 40px;
+    margin: auto;
+    text-align: center;    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.passwordTextField  {
+    width: 250px;
+    height: 55px;
+    margin: auto;
+    text-align: center;    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.loginButton
+{
+    width: 225px;
+    height: 55px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    color: #3fb0d9;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+

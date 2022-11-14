@@ -14,13 +14,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/preferences" element={<Preferences />}/>
-          <Route path="/login" element={<Login />}/>
+          <Route exact path="/" element={<Login />}/>
           <Route path="/dashboard" element={<Dashboard />}/>
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
-document.body.style.backgroundColor = "#00134d";
+document.body.style.backgroundColor = "#1c1e21";
 
 export default App;

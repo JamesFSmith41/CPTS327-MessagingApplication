@@ -7,6 +7,17 @@
     width: 50%;
 }
 
+.messages {
+    display:flex;
+    flex-direction: reverse-column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-style:outset;
+    height: '50%';
+
+}
+
 .uiElements {
     display:flex;
     flex-direction: column;
