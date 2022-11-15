@@ -32,21 +32,9 @@ function pushToArr(message, userName1) {
 }
 function AutoGridNoWrap () {
   return (
-    <Box sx={{ 
-      overflow: 'visibile',
-      overflow: 'auto',
-      }}>
-    <StyledPaper
-      sx={{
-        my: 1,
-        mx: 'auto',
-        p: 0.5,
-        width: '900px',
-      }}
-    >
-      <Grid container 
-            justifyContent="flex"
-            wrap="wrap" 
+    <Box className="messageBoxes">
+    <StyledPaper className="styledPaper">
+      <Grid container className="messageGrid"
       spacing={1}>
           {arr}
       </Grid>
@@ -68,7 +56,6 @@ color: theme.palette.text.primary,
 const MessageBox = () => {
     const [message, setMessage] = useState("");
     const ref = useRef(null);
-
     const handleClick = () => {
         setMessage(ref.current.value)
         var tempMessage = encryptSHA256(ref.current.value)
@@ -78,74 +65,42 @@ const MessageBox = () => {
 
     return (
         <div className="main">
-          <View style = {{height: '100%'}}>  
-                <Grid container
-            justifyContent="flex"
-            flexDirection="row"
-            >
-                <Grid item
-                display="flex">
-                <Box  sx={{
-                height: '500px',
-                width: '900px',
-                overflow: 'auto',
-                justifyContent: 'center',
-                background: "#242526",
-                display: 'flex',
-                borderRadius: '6px',
-                border: 1
-              }}  
-            >
-                <AutoGridNoWrap message={message}/>
+          <div className="messageArea">
+            <Box className="optionsContainer">
+              <text className="optionsText">
+                Change Encryption Type
+              </text>
+              <button className="sha256">
+                  SHA256
+              </button>
+              <button className="AES">
+                AES
+              </button>
             </Box>
-                </Grid>
-                <Grid item>
-                <Box  sx={{
-                height: '55px',
-                overflow: 'auto',
-                justifyContent: 'center',
-                background: "#353d46",
-                display: 'flex',
-
-              }}  
-            >
-                      <TextField
-                        sx={{
-                            textAlign: 'center',
-                            textTransform: 'capitalize',
-                            fontWeight: 'bold',
-                            fontSize: 'h6.fontSize',
-                            fontFamily: 'monospace',
-                            width: 750,
-                            borderRadius: '6px',
-                            justifyContent: 'center',
-                            background: " #3A3B3C"
-                        }}
-                        id="messageBox"
-                        name="messageBox"
-                        inputRef={ref}
-                            >
-                    </TextField>
-                    <Button
-                    sx={{
-                        height: 55,
-                        width: 150,
-                        spacing: '10px',
-                        borderRadius: 2,
-                        borderColor: 'text.primary',
-                        border: 1,
-                    }}
-                        type="submit"
-                        variant="contained"
-                        style={{backgroundColor: "#2596be"}}
-                        onClick={() => handleClick()}
-                    >
-                        Send 
-                    </Button>
-                    </Box>
-                </Grid>
+            <Grid container className="messageBox"
+              justifyContent="flex"
+              flexDirection="row">
+              <Grid item
+              display="flex">
+                <Box className="messages">
+                  <AutoGridNoWrap message={message}/>
+                </Box>  
+              </Grid>
+              <Grid item>
+              <Box className="containerBox">
+                  <TextField  className="messageTextField"
+                    id="messageBox"
+                    name="messageBox"
+                    inputRef={ref}>
+                  </TextField>
+                  <button className="sendButton"
+                      onClick={() => handleClick()}>
+                      Send 
+                  </button>
+                  </Box>
+              </Grid>
             </Grid>
-          </View>
+          </div>    
         </div>
     );
 }

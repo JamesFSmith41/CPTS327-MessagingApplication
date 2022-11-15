@@ -6,37 +6,70 @@
     justify-content: flex-start; 
 }
 
-.loggedInOptions
-{
-    
-}
-
 .dashboardButton
 {
-    padding-right: 10px;
     height: 35;
     width: 150;
     border-radius: 2;
     border-color: #2596be;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    transition-duration: 0.4s;
     border: 1;
-    margin-right: 10px;
+    margin-left:3px;
+    margin-right: 3px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.dashboardButton:hover {
+    background-color: #242526; 
+    color: white;
+  }
+
 .preferenceButton
 {
-    padding-left: 10px;
-    margin-left: 10px;
     height: 35;
     width: 150;
     border-radius: 2;
     border-color: #2596be;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    transition-duration: 0.4s;
     border: 1;
-    font-family: Arial;
+    margin-left:3px;
+    margin-right: 3px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.logout 
+.preferenceButton:hover {
+    background-color: #242526; 
+    color: white;
+  }
+
+.logoutButton
 {
-
+    height: 35;
+    width: 150;
+    border-radius: 2;
+    border-color: #2596be;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    transition-duration: 0.4s;
+    border: 1;
+    margin-left:3px;
+    margin-right: 3px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.logoutButton:hover {
+    background-color: #242526;
+    color: white;
+  }

@@ -1,5 +1,5 @@
 import './Login.css'
-import {Box,Typography, TextField,Button} from "@mui/material";
+import {Box,Typography, TextField,Button, StepButton} from "@mui/material";
 import { useNavigate} from "react-router-dom";
 import Dashboard from '../Dashboard/Dashboard';
 import * as React from 'react';
@@ -26,27 +26,18 @@ import Grid from '@mui/material/Grid';
                             </Box>
                         </Grid>
                         <Grid item>
-                            <Box className="userNameText"
-                                variant="contained">
-                                Username
-                            </Box>
-                        </Grid>
-                        <Grid item>
                             <TextField className='userNameTextField'
+                            sx={{mb: 5}}
                                 //onChange={e => setPassword(e.target.value)}            
                                 id="outlined-basic"
                                 label="Username"
                                 >
                             </TextField>
                         </Grid>
-                        <Grid item>
-                            <Box className="passwordText"
-                                variant="contained">
-                                    Password
-                            </Box>   
-                        </Grid>
+
                         <Grid item>
                             <TextField className='passwordTextField'
+                                sx={{ mb: 5}}
                                 type="password"
                                 //onChange={e => setPassword(e.target.value)}            
                                 id="outlined-basic"
@@ -54,13 +45,13 @@ import Grid from '@mui/material/Grid';
                             </TextField>
                         </Grid>    
                         <Grid item>
-                            <Button className="loginButton"
+                            <button className="loginButton"
                                 onClick={() => navigateDashboard()}
                                 type="submit"
                                 variant="contained"
                             >
                              Login   
-                            </Button>
+                            </button>
                         </Grid>
                     </Grid>
                 </Box>

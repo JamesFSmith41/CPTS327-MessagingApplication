@@ -24,29 +24,29 @@ const NavigationBar = () => {
     return( 
     <div className="navbar">    
         <div className="loggedInOptions">
-            <Button className='dashboardButton'
+            <button className='dashboardButton'
                     type="submit"
                     variant="contained"
                     onClick={() => navigateDashboard()}
                 >
                 Dashboard
-                </Button>
-                <Button className='preferenceButton'
+                </button>
+                <button className='preferenceButton'
                 type="submit"
                 variant="contained"
                 onClick={() => navigatePreferences()}
             >
             Preferences
-            </Button> 
+            </button> 
         </div>
         <div className="logout">
-            <Button className='logoutButton'
+            <button className='logoutButton'
                 type="submit"
                 variant="contained"
                 onClick={() => navigateLogin()}
             >
             Log Out
-            </Button> 
+            </button> 
         </div>
     </div>
 

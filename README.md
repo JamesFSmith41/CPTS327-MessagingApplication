@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Required Packages
+
+Latest Node.js 
+npm install express --save
+npm install touch-cli -g
+npm install -g nodemon
+
+### Setup for backend
+
+https://www.geeksforgeeks.org/how-to-connect-mongodb-with-reactjs/
+
