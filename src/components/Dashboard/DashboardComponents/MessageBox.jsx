@@ -60,7 +60,7 @@ const MessageBox = () => {
         setMessage(ref.current.value)
         var tempMessage = encryptSHA256(ref.current.value)
         pushToArr(tempMessage, "en")
-        pushToArr(decryptSHA256(tempMessage), "de")
+        pushToArr(decryptSHA256(temp,  Message), "de")
       };
 
     return (
