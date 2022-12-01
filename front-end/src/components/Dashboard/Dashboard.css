@@ -1,0 +1,36 @@
+.dash {
+    background-image: linear-gradient(#000000, #2596be);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.dashHeader {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #4c5a6b
+}
+
+.navBar {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.messageBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}

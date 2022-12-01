@@ -1,0 +1,143 @@
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.messageArea {
+    display: flex;
+    flex-direction: row;
+}
+
+.optionsText {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.optionsContainer {
+    height: 75%;
+    width: 250px;
+    color: #e6ecff;
+    margin-right: 10px;
+    background-color: #3c3a3a;
+    display: felx;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #242526;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 5px #2596be;
+}
+
+
+.pullMessagesButton {
+    margin-top: 5%;
+    height: 35;
+    width: 150;
+    border-radius: 2;
+    border-color: #2596be;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    transition-duration: 0.4s;
+    border: 1;
+    margin-left:3px;
+    margin-right: 3px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pullMessagesButton:hover {
+    background-color: #242526; 
+    color: white;
+}
+
+.clearMessagesButton {
+    height: 35;
+    width: 150;
+    border-radius: 2;
+    border-color: #2596be;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    transition-duration: 0.4s;
+    border: 1;
+    margin-left:3px;
+    margin-right: 3px;
+    margin-top: 5%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearMessagesButton:hover {
+    background-color: #242526; 
+    color: white;
+}
+
+
+.messages {
+    height: 500px;
+    width: 900px;
+    overflow: auto;
+    justify-content: center;
+    background-color: #242526;
+    display: flex;
+
+
+}
+
+.messageTextField {
+    text-align: center;
+    width: 750px;
+    justify-content: center;
+    background-color: #3A3B3C;
+    color: #e6ecff
+}
+
+.sendButton{
+    height: 55px;
+    width: 150px;
+    border-radius: 2;
+    border-color: #2596be;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 10px 2px #2596be;
+    transition-duration: 0.4s;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sendButton:hover {
+    background-color: #242526; /* Green */
+    color: white;
+  }
+
+.containerBox{
+    height: 55px;
+    overflow: auto;
+    justify-content: center;
+    background-color: #353d46;
+    display: flex;
+}
+
+.styledPaper {
+    padding: 0.5;
+    width: 900px;
+}
+
+.messageBoxes {
+    margin-top: 2%;
+    overflow: auto;
+}
+
+.messageGrid {
+    justify-content: flex;
+}

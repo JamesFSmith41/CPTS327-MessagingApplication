@@ -1,0 +1,112 @@
+.loginBox   {
+    margin: auto;
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+}
+
+.loginGridContainer {
+    height: 50%;
+    color: #e6ecff;
+    background-color: #3c3a3a;
+    margin-top: 30%;
+    padding: 10%;
+    padding-bottom: 10%;
+    display: felx;
+    flex-direction: column;
+    border: 2px solid #242526;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 5px #2596be;
+}
+
+.loginText {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20%;
+    text-align: center;    
+    border-radius: 5%;
+    border-color: #2596be;
+    border: 1;
+    font-size: 150%;
+    line-height: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.emailTextField {
+    width: 100%;
+    height: 50%;
+    text-align: center;    
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.userNameTextField {
+    width: 100%;
+    height: 50%;
+    text-align: center;    
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.passwordTextField  {
+    width: 100%;
+    height: 50%;
+    text-align: center;    
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+}
+
+.backButton
+{
+    width: 75%;
+    height: 100%;
+    margin-left: 15%;
+    text-align: center;
+    border-radius: 2%;
+    border-color: #2596be;
+    border: 1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #242526;
+    background-color: #3fb0d9;
+    color: #e6ecff;
+    box-shadow: 0px 0px 2px 2px #2596be;
+    transition-duration: 0.4s;
+
+}
+
+.backButton:hover {
+    background-color: #242526; /* Green */
+    color: white;
+  }
